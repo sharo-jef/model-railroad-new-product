@@ -24,3 +24,6 @@ interface Kato extends Repository {
 
 interface GreenMax extends Repository {
 }
+
+interface NewProductRepository extends Repository {
+}
