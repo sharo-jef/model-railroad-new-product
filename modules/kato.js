@@ -14,7 +14,7 @@ export class Kato {
                     id: $('td:nth-child(1) > .number_pc', el)?.text(),
                     name: $('td.name > a', el)?.text(),
                     date: $('td.date', el)?.text(),
-                    maker: 'Kato',
+                    maker: 'カトー',
                     price: +$('td.price', el)?.text()?.replace(/予|￥|,/g, ''),
                     type: '',
                     label: $('td.name > span.special', el)?.text() || $('td.name > span.new', el)?.text() || '',
