@@ -2,6 +2,7 @@ interface NewProduct {
     id: string;
     name: string;
     date: string;
+    maker: string;
     price: number?;
     /** 完成品, 車両キット, パーツ, etc. */
     type: string?;

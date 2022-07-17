@@ -67,6 +67,7 @@ export class HobbyCenterKato {
                 id: $('td:nth-child(1)', tr).text(),
                 name: $('td:nth-child(3)', tr).text(),
                 date,
+                maker: 'HobbyCenterKato',
                 price: +$('td:nth-child(4)', tr).text()?.replace(/予|￥|\\|¥|,/g, '').trim(),
                 type: '',
                 label: rawLabel.trim() === 'NNEW' ? 'NEW' : '',

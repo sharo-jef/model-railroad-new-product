@@ -29,6 +29,7 @@ export class GreenMax {
                     id: $('.schedule_num', section).text().replace(/<|＜|＞|>/g, ''),
                     name: $('.schedule_name_ta', section).text(),
                     date: title,
+                    maker: 'GreenMax',
                     price: +$('.schedule_price', section).text().replace(/\\|￥|,|\.|-/g, ''),
                     type: $('.schedule_type', section).text(),
                     label: $('a > div:nth-child(1)', section).text(),
