@@ -1,6 +1,6 @@
 {
     "name": "model-railroad-new-product",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "model-railroad-new-product",
     "main": "index.js",
     "scripts": {
