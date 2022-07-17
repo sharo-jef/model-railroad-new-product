@@ -15,16 +15,17 @@ export class GreenMax {
                 continue;
             }
             for (const section of $('.schedule_item', el)) {
-                const url = $('a', section).attr('href');
+                // リクエスト数がエグいので一旦コメントアウト
+                // const url = $('a', section).attr('href');
                 let description = '';
-                if (url) {
-                    const $ = await fetch(url);
-                    $('dl').each((_, dl) => {
-                        if ($('dt > div', dl).text() === '商品の特徴') {
-                            $('dd > p', dl).each((_, p) => description += `${$(p).html().replace(/<br[ ]*\/?>/g, '\n')}\n`);
-                        }
-                    });
-                }
+                // if (url) {
+                //     const $ = await fetch(url);
+                //     $('dl').each((_, dl) => {
+                //         if ($('dt > div', dl).text() === '商品の特徴') {
+                //             $('dd > p', dl).each((_, p) => description += `${$(p).html().replace(/<br[ ]*\/?>/g, '\n')}\n`);
+                //         }
+                //     });
+                // }
                 result.push({
                     id: $('.schedule_num', section).text().replace(/<|＜|＞|>/g, ''),
                     name: $('.schedule_name_ta', section).text(),
